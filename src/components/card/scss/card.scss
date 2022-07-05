@@ -16,7 +16,7 @@ body{
         margin: 0 auto;
         padding: 1rem 2rem;
         @media (min-width:768px) {    
-            max-width: 700px;
+            max-width: 600px;
             flex-direction: row;
             margin: 6rem auto;
 
@@ -28,6 +28,7 @@ body{
             border-top-right-radius: 14px;
             border-top-left-radius: 14px;
             @media(min-width:768px){
+                height: 100%;
                 border-top-right-radius: 0;
                 border-bottom-left-radius: 14px;
             }
@@ -39,6 +40,7 @@ body{
             border-bottom-right-radius: 14px;
             border-bottom-left-radius: 14px;
             @media(min-width:768px){
+                width: 90%;
                 height: auto;
                 border-bottom-left-radius: 0;
                 border-top-right-radius: 14px;
@@ -72,7 +74,7 @@ body{
                     display: flex;
                     align-items: center;
                     gap: 1.3rem;
-                    margin-top: 4rem ;
+                    margin-top: 2rem ;
 
                     .final-price{
                         font-family: $fontFraunces;
