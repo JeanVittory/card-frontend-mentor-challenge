@@ -1,0 +1,112 @@
+@import "../../../scss/fonts.scss";
+@import "../../../scss/colors.scss";
+@import "../../../scss/fontSize.scss";
+
+body{
+    background-color: $primaryCream;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 365px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        @media (min-width:768px) {    
+            max-width: 700px;
+            flex-direction: row;
+            margin: 6rem auto;
+
+        } 
+
+        .pictureMobile{
+            width: 100%;
+            vertical-align: bottom;
+            border-top-right-radius: 14px;
+            border-top-left-radius: 14px;
+            @media(min-width:768px){
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 14px;
+            }
+        }
+        
+        .article-container{
+            height: 100%;
+            background-color: $neutralWhite;
+            border-bottom-right-radius: 14px;
+            border-bottom-left-radius: 14px;
+            @media(min-width:768px){
+                height: auto;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 14px;
+            }
+            .article{
+                padding: 2rem;
+
+                h1{
+                    font-family: $fontMontserrat;
+                    font-weight: 300;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    letter-spacing: .15rem;
+                    color: $neutralDarkGrayishBlue;
+                }
+
+                h2{
+                    font-family: $fontFraunces;
+                    font-size: 2rem;
+                    margin: 1rem 0;
+                }
+                
+                p{
+                    font-family: $fontMontserrat;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 1.5rem;
+                    color: $neutralDarkGrayishBlue;
+                }
+                .container-prices{
+                    display: flex;
+                    align-items: center;
+                    gap: 1.3rem;
+                    margin-top: 4rem ;
+
+                    .final-price{
+                        font-family: $fontFraunces;
+                        color: $primaryDarkCyan;
+                        font-size: 2rem;
+                    }
+
+                    .price-throughline{
+                        font-family: $fontMontserrat;
+                        font-weight: 500;
+                        color: $neutralDarkGrayishBlue;
+                        text-decoration: line-through;
+                        font-size: .8rem;
+                    }
+                }
+
+                .card-button{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    gap: .5rem;
+                    margin-top: 1rem;
+                    border: none;
+                    background-color: $primaryDarkCyan;
+                    color: $neutralWhite;
+                    font-family: $fontMontserrat;
+                    font-size: 1rem;
+                    padding: 1rem 0;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+}
+

@@ -1,0 +1,13 @@
+@import "../../../scss/colors.scss";
+@import "../../../scss/fonts.scss";
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: $fontMontserrat;
+    color: $neutralDarkGrayishBlue;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 1rem;
+}
